@@ -1,0 +1,104 @@
+th {
+    background-color: lightgrey;
+}
+
+td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 0;
+}
+
+table {
+    border-collapse: collapse;
+    cursor: pointer;
+}
+
+#structogram table {
+    width: 100%;
+}
+
+.active {
+    animation: pulse-active 1s infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+@keyframes pulse-active {
+    from {
+        background-color: white;
+    }
+    to {
+        background-color: khaki;
+    }
+}
+
+.dia {
+    border: 1px solid black;
+    background-color: white;
+    margin: 15px;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.interact {
+    cursor: pointer;
+}
+
+.dia td {
+    padding: 5px;
+}
+
+td>svg {
+    width: 100%;
+    height: 100%;
+}
+
+.break-block {
+    border-left: none;
+}
+
+.break-sign {
+    border-right: none;
+    padding: 0;
+    height: 2em;
+    width: 2em;
+}
+
+.call-side {
+    width: 10px;
+}
+
+.condition {
+    border-bottom: none;
+}
+
+.cond_yes {
+    padding: 0;
+    border: none;
+    min-width: 5em;
+    width: 50%;
+    height: 2em;
+}
+
+.cond_no {
+    padding: 0;
+    border: none;
+    min-width: 5em;
+    width: 50%;
+    height: 2em;
+    text-align: right;
+}
+
+.loop-head {
+    border-bottom: none;
+}
+
+.loop-foot {
+    border-top: none;
+}
+
+.loop-block {
+    width: 10%;
+    border-top: none;
+    border-bottom: none;
+}
